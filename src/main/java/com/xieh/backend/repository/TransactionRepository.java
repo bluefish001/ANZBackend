@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.xieh.backend.entity.Transaction;
 
 /**
- * Created by xieh on 11/10/2019.
+ * transaction info from db
  */
 @Repository
 public interface TransactionRepository  extends JpaRepository<Transaction,Long> {

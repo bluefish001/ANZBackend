@@ -5,8 +5,13 @@ import java.util.List;
 import com.xieh.backend.entity.Account;
 
 /**
- * Created by xieh on 11/10/2019.
+ * Account management
  */
 public interface AccountService {
+
+    /**
+     * get all account
+     * @return
+     */
     public List<Account> getAllAccount();
 }

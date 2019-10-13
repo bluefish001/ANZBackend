@@ -14,7 +14,7 @@ import com.xieh.backend.service.AccountService;
 import com.xieh.backend.service.TransactionService;
 
 /**
- * Created by xieh on 11/10/2019.
+ * handle client request
  */
 @RestController
 public class BackendController {
@@ -25,8 +25,10 @@ public class BackendController {
     @Autowired
     private TransactionService transactionService;
 
-    /*
-     * get all accounts
+    /**
+     * Get all accounts
+     * @return
+     * @throws ResourceNotFoundException
      */
     @GetMapping("/api/accounts")
     public List<Account> getAccounts() throws ResourceNotFoundException {
@@ -37,6 +39,12 @@ public class BackendController {
         return accounts;
     }
 
+    /**
+     * Get all transactions by the account number
+     * @param accNumber
+     * @return
+     * @throws ResourceNotFoundException
+     */
     @GetMapping("/api/transaction/{accNumber}")
     public List<Transaction> getTransactionsByAccNumber(@PathVariable(value = "accNumber") Long accNumber) throws ResourceNotFoundException{
         List<Transaction> transactions = transactionService.getTransactionsByAccountNumber(accNumber);

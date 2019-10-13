@@ -2,7 +2,7 @@ package com.xieh.backend.exception;
 
 import java.util.Date;
 /**
- * Created by xieh on 11/10/2019.
+ * Error message response to client
  */
 public class ErrorDetails {
     private Date timestamp;

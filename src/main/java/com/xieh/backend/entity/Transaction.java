@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Created by xieh on 11/10/2019.
+ * Transaction info
  */
 @Entity
 @Table(name="account_transaction")

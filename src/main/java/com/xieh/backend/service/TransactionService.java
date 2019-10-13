@@ -5,8 +5,13 @@ import java.util.List;
 import com.xieh.backend.entity.Transaction;
 
 /**
- * Created by xieh on 11/10/2019.
+ * transaction management
  */
 public interface TransactionService {
+    /**
+     * get transaction by account number
+     * @param accountNumber
+     * @return
+     */
     public List<Transaction>  getTransactionsByAccountNumber(Long accountNumber);
 }

@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Created by xieh on 11/10/2019.
+ * Account info
  */
 @Entity
 @Table(name="Account")
